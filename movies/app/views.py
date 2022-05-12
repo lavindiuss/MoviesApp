@@ -1,14 +1,12 @@
-from django.shortcuts import render
 import django_filters.rest_framework
-from rest_framework import filters
-
-from rest_framework import generics, status
+from django.shortcuts import render
+from rest_framework import filters, generics, status
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
 # Create your views here.
-from .models import Movie, Comment
-from .serializers import FetchMovieSerializer, MovieSerializer, CommentSerializer
+from .models import Comment, Movie
+from .serializers import CommentSerializer, FetchMovieSerializer, MovieSerializer
 from .services import MovieService
 
 

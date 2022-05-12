@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Movie, Comment
+from .models import Comment, Movie
 
 
 class FetchMovieSerializer(serializers.Serializer):
